@@ -8,6 +8,13 @@ Module Program
 
         Console.WriteLine("Zadej poèet èísel:")
         pocet = Console.ReadLine
+        Console.WriteLine($"Bude se sèítat {pocet} èísla/èísel ")
+        Console.WriteLine("------------------------------------")
+        If pocet < 0 Then
+            Console.WriteLine("Musíš zadat kladné èíslo")
+            End
+        End If
+
         Do Until pocet = 0
             Console.WriteLine("Napiš èíslo:")
             cislo = Console.ReadLine
